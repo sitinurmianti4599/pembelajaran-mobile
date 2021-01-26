@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="352dp"
+        android:layout_height="615dp"
+        android:layout_margin="4dp"
+        android:background="@color/colorCloud"
+        app:cardCornerRadius="11dp"
+        app:cardElevation="7dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="233dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_account" />
+
+
+        <TextView
+            android:id="@+id/txtUserprofil"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:text="Username" />
+
+            <TextView
+                android:id="@+id/txemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Email@gmail.com"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/out"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:layout_marginLeft="35dp"
+                android:textSize="16sp"
+                app:backgroundTint="@color/colorBlue"
+                android:layout_marginTop="170dp"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

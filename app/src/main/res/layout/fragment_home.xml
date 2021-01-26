@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:background="@color/navy"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/si"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/si" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-SI"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ti"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ti" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HMJ-TI"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mtk"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/mtk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-MTK"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fsk"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/fisika" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-Fisika"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bio"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/bio" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HMJ-Biologi"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kimia"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/kimia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-Kimia"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pwk"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/pwk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-PWK"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/arsi"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/arsi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HMJ-Arsi"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/peter"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/peter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HJM-Peter"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

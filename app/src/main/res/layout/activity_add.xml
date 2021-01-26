@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:id="@+id/image_barang"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_add_photo_24"/>
+            <TextView
+                android:id="@+id/pf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambah Foto"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlue"
+                android:layout_marginLeft="-20dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/txID_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <requestFocus/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Barang"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/txNomor_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <requestFocus/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txNama_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+            <requestFocus/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kondisi Barang"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spKB_Add"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:entries="@array/kondisi" />
+            <requestFocus/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Barang"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. "/>
+                <EditText
+                    android:id="@+id/txHarga_Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+                <requestFocus/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Beli"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txTgl_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:inputType="date"/>
+            <requestFocus/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Alamat"-->
+            <!--                android:textStyle="bold"/>-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/txAlamat_Add"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:inputType="textCapSentences"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/save_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:text="Simpan" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:text="Cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

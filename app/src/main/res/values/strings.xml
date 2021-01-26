@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Inventaris HMJ</string>
+    <string name="title_home">Home</string>
+    <string name="title_profil">Profile</string>
+    <string name="title_riwayat">Riwayat</string>
+    <string name="welcome">Selamat Datang Di Data Inventaris</string>
+    <string name="title">HMJ Fakultas Saintek</string>
+    <string name="after_register">Sudah memiliki akun? <font color='red'>Login Sekarang</font></string>
+    <string name="button_not_register">Tidak memiliki akun? <font color='red'>Daftar Sekarang</font></string>
+    <string name="batal">Batal</string>
+    <string name="keluar">Keluar</string>
+    <string-array name="kondisi">
+        <item>Pilih Status Barang</item>
+        <item>Bagus</item>
+        <item>Baru</item>
+        <item>Usang</item>
+        <item>Dlm Perbaikan</item>
+        <item>Di Pinjam</item>
+        <item>Di Buang</item>
+        <item>Rusak</item>
+        <item>Cacat</item>
+        <item>Hilang</item>
+
+    </string-array>
+</resources>
